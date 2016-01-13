@@ -1,1 +1,19 @@
-<h1>This is the home view</h1>
+<!-- The top toolbar -->
+ <md-toolbar class="home">
+   <div class="md-toolbar-tools">
+     <md-button class="md-icon-button" aria-label="Settings">
+       <md-icon md-svg-icon="./bower_components/material-design-icons/maps/svg/design/ic_local_airport_24px.svg"></md-icon>
+     </md-button>
+     <h2>
+       <span class="md-title">Cameroon Express!</span>
+     </h2>
+   </div>
+ </md-toolbar>
+	<md-button class="md-raised" ui-sref="shop">SHOP </md-button>
+	<md-button class="md-raised" ui-sref="sell">SELL </md-button>
+
+
+
+	<md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
+ <ng-md-icon icon="add"></ng-md-icon>
+ </md-button>

@@ -1,5 +1,5 @@
 {
-  "name": "cameroonexpress",
+  "name": "africaexpress",
   "version": "1.0.0",
   "description": "open source marketplace for independent sellers",
   "main": "server.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ctodmia/cameroonexpress.git"
+    "url": "git+https://github.com/ctodmia/africaexpress.git"
   },
   "keywords": [
     "angularjs",
@@ -22,9 +22,9 @@
   "author": "Carine Todmia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ctodmia/cameroonexpress/issues"
+    "url": "https://github.com/ctodmia/africaexpress/issues"
   },
-  "homepage": "https://github.com/ctodmia/cameroonexpress#readme",
+  "homepage": "https://github.com/ctodmia/africaexpress#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
     "express": "^4.13.3",

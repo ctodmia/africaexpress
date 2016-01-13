@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="camerXpress">
+<head>
+	<title>CamerXpress</title>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+
+<!-- The top toolbar -->
+ <md-toolbar>
+   <div class="md-toolbar-tools">
+     <md-button class="md-icon-button" aria-label="Settings">
+       <md-icon md-svg-icon="./bower_components/material-design-icons/maps/svg/design/ic_local_airport_24px.svg"></md-icon>
+     </md-button>
+     <h2>
+       <span class="md-title">Cameroon Express!</span>
+     </h2>
+   </div>
+ </md-toolbar>
+	<md-button class="md-raised">Hello There!</md-button>
+
+	<div>
+		<div ui-view></div>
+	</div>
+
+	<md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
+ <ng-md-icon icon="add"></ng-md-icon>
+ </md-button>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+
+      
+<script src="app.js"></script>
+<script src="controllers/homecontroller.js"></script>
+<script src="controllers/shopcontroller.js"></script>
+<script src="controllers/sellcontroller.js"></script>
+</body>
+</html>

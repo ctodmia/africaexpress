@@ -24,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/ctodmia/cameroonexpress/issues"
   },
-  "homepage": "https://github.com/ctodmia/cameroonexpress#readme"
+  "homepage": "https://github.com/ctodmia/cameroonexpress#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.3.5"
+  }
 }

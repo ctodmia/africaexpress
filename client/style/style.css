@@ -5,6 +5,7 @@ md-toolbar.home{
 
 .homewrapper{
 	height: 900px;
+
 	/*background-color: red;*/
 	background-image: url('../img/homebg.jpg');
 	background-size: cover;
@@ -12,5 +13,39 @@ md-toolbar.home{
 
 }
 .container {
-	margin-top: 50px;
+	margin: 300px 0px 100px 0px;
+	text-align: center;
+	color: #fff;
+
+
+}
+
+.container h1 {
+	text-shadow: 2px 2px 4px #000000;
+}
+
+a.md-button.md-raised-shop, .md-button.md-raised-shop {
+	margin: 100px 50px 100px 50px;
+	background-color: #fff;
+	color: rgb(253, 58, 0);
+	/*border-color: rgb(253, 58, 0);*/
+	/*border: solid;*/
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding: 10px 50px 10px 50px;
+}
+
+a.md-button.md-raised-sell, .md-button.md-raised-sell {
+	margin: 100px 20px 100px 20px;
+	background-color: rgb(253, 58, 0);
+	color: #fff;
+	/*border-color: rgb(253, 58, 0);*/
+	/*border: solid;*/
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding: 10px 50px 10px 50px;
+}
+.md-raised {
+	margin: 10px 10px 200px 20px;
+	padding: 20px 100px 10px 100px;
 }

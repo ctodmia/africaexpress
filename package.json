@@ -1,0 +1,28 @@
+{
+  "name": "cameroonexpress",
+  "version": "1.0.0",
+  "description": "open source marketplace for independent sellers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctodmia/cameroonexpress.git"
+  },
+  "keywords": [
+    "angularjs",
+    "nodejs",
+    "ecommerce",
+    "fileuploader",
+    "mongodb",
+    "express"
+  ],
+  "author": "Carine Todmia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctodmia/cameroonexpress/issues"
+  },
+  "homepage": "https://github.com/ctodmia/cameroonexpress#readme"
+}

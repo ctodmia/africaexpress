@@ -1,3 +1,3 @@
 module.exports = {
-        url : 'mongodb://localhost/stencil-dev'
+        MONGO_URI : 'mongodb://localhost/shop'
     }

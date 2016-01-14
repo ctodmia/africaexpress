@@ -1,17 +1,26 @@
 var express = require('express');
 var app = express();
-
+var mongoose = require('mongoose')
 var cors = require('cors')
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var methodOverride = require('method-override');
 var activateRoutes = require('./server/routes.js')
 
-var db = require('./config/config')
+var config = require('./config/config')
 
 var port = process.env.PORT || 8080;
 
+var uri = config.MONGO_URI; 
 
+mongoose.connect(uri);
+var db = mongoose.connection;
+db.on('error', function(err){
+  console.log('connection error', err);
+});
+db.once('open', function(){
+  console.log('connect');
+});
 
 app.use(cors());
 app.use(bodyParser.json());

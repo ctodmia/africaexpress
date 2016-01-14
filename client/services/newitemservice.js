@@ -1,6 +1,6 @@
 angular.module('africaXpress')
 
-	.factory('NewItem', ['$http', '$q', function($http, $q){
+	.factory('Item', ['$http', '$q', function($http, $q){
 
 		var obj = {
 
@@ -10,12 +10,17 @@ angular.module('africaXpress')
 		// 	return $http.get('/initChat', user)
 		// }
 
-		obj.getItem = function(item) {
-			console.log('thiis is item', item)
-			
+		obj.newItem = function(item) {
 			 return $http.post('/newitem', item)
 			
 		};
+
+		obj.getAll = function() {
+			return $http.get('/allitems').success(function(data){
+				console.log(data)
+				return data;
+			})
+		}
 
 		return obj;
 	}])

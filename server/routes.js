@@ -2,6 +2,12 @@ var Item = require('./model/item.js').item
 module.exports = function(app){
 	console.log('routes ready')
 
+	app.use(function (error, req, res, next){
+	    //Catch json error
+	    console.log('this is the err', req.body);
+	    next();
+	});
+
 	app.all('/*', function(req, res, next) {
 	  res.header("Access-Control-Allow-Origin", "*");
 	  res.header("Access-Control-Allow-Methods", "PUT, GET, POST, DELETE, OPTIONS");
@@ -9,9 +15,10 @@ module.exports = function(app){
 	  next();
 	});
 
-	app.get('*', function(req, res) {
-	         res.sendfile('./client/index.html'); // load our public/index.html file
-	     });
+	// app.get('*', function(req, res) {
+	//          res.sendfile('./client/index.html'); // load our public/index.html file
+	//      });
+app.get('/', function(req, res){});
 
 	app.post('/newitem', function(req, res, next){
 
@@ -27,6 +34,13 @@ module.exports = function(app){
 			if(err){return err};
 			console.log('this is what you saved', data);
 		})
+	// app.get('/allitems', function(req, res, next){
+	// 	Item.find({}, function(err, data){
+	// 	      if(err){ return next(err);}
+	// 	      console.log('this is data', data)
+	// 	      res.json(data);
+	// 	    });
+	// })
 		
 
 	})

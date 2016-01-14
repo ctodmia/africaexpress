@@ -1,5 +1,5 @@
 angular.module('africaXpress')
-	.controller('SellController', function($scope, Upload, $timeout, NewItem){
+	.controller('SellController', function($scope, Upload, $timeout, Item){
 		console.log('this is the sell controller')
 		$scope.displayPic;
 		$scope.name;
@@ -7,7 +7,7 @@ angular.module('africaXpress')
 		$scope.add = function(){
 			console.log('we hitit', $scope.name)
 			console.log('this is file html5', $scope.file)
-			NewItem.getItem({
+			Item.newItem({
 				username: $scope.username, 
 				name: $scope.name, 
 				description: $scope.description,

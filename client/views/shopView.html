@@ -1,1 +1,33 @@
 <h1>This is the ShopView</h1>
+
+<md-card>
+ <img src="card-image.png" class="md-card-image" alt="image caption">
+ <md-card-content>
+   <h2>Card headline</h2>
+   <p>Card content</p>
+ </md-card-content>
+ <md-card-footer>
+   Card footer
+ </md-card-footer>
+</md-card>
+
+<md-card>
+ <img src="card-image.png" class="md-card-image" alt="image caption">
+ <md-card-content>
+   <h2>Card headline</h2>
+   <p>Card content</p>
+ </md-card-content>
+ <md-card-actions layout="row" layout-align="end center">
+   <md-button>Action 1</md-button>
+   <md-button>Action 2</md-button>
+ </md-card-actions>
+</md-card>
+
+<md-input-container>
+  <label>Username</label>
+  <input type="text" ng-model="user.name">
+</md-input-container>
+<md-input-container>
+  <label>Description</label>
+  <textarea ng-model="user.description"></textarea>
+</md-input-container>

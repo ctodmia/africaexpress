@@ -1,1 +1,20 @@
 <h1>this is the SellView</h1>
+
+
+<md-input-container>
+  <label>Username</label>
+  <input type="text" ng-model="user.name">
+</md-input-container>
+<md-input-container>
+  <label>Description</label>
+  <textarea ng-model="user.description"></textarea>
+</md-input-container>
+
+<md-input-container>
+  <label>Upload Image</label>
+  <input type="file" ng-model="user.description">
+</md-input-container>
+
+<md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
+ <ng-md-icon icon="add"></ng-md-icon>
+ </md-button>

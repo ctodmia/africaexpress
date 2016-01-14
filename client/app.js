@@ -1,4 +1,4 @@
-angular.module('camerXpress', [
+angular.module('africaXpress', [
 	'ui.router',
 	'ngMaterial',
 	'ngAria',

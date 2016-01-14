@@ -1,7 +1,7 @@
  <md-toolbar class="main">
    <div class="md-toolbar-tools">
      <md-button class="md-icon-button" aria-label="Settings">
-       <md-icon md-svg-icon="./bower_components/material-design-icons/maps/svg/design/ic_local_airport_24px.svg"></md-icon>
+      <!--  <md-icon md-svg-icon="bower_components/material-design-icons/maps/svg/design/ic_local_airport_24px.svg"></md-icon> -->
      </md-button>
      <h2>
        <span class="md-title">Africa Express!</span>
@@ -35,11 +35,11 @@
 
 <md-input-container>
   <label>Username</label>
-  <input type="text" ng-model="user.name">
+  <input type="text" ng-model="name">
 </md-input-container>
 <md-input-container>
   <label>Description</label>
-  <textarea ng-model="user.description"></textarea>
+  <textarea ng-model="description"></textarea>
 </md-input-container>
 
 <md-input-container>
@@ -47,7 +47,5 @@
   <input type="file" ng-model="user.description">
 </md-input-container>
 
-<md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
- <ng-md-icon icon="add"></ng-md-icon>
- </md-button>
+<button ng-click="add()">Add</button>
 </div>

@@ -27,6 +27,8 @@
   "homepage": "https://github.com/ctodmia/africaexpress#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "method-override": "^2.3.5",
     "mongoose": "^4.3.5"

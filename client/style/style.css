@@ -35,6 +35,10 @@ a.md-button.md-raised-shop, .md-button.md-raised-shop {
 	padding: 10px 50px 10px 50px;
 }
 
+#main{
+	background-color: rgb(253, 58, 0);
+	color: rgba(255,255,255,0.87);
+}
 a.md-button.md-raised-sell, .md-button.md-raised-sell {
 	margin: 100px 20px 100px 20px;
 	background-color: rgb(253, 58, 0);
@@ -48,4 +52,25 @@ a.md-button.md-raised-sell, .md-button.md-raised-sell {
 .md-raised {
 	margin: 10px 10px 200px 20px;
 	padding: 20px 100px 10px 100px;
+}
+
+
+.cropArea {
+    background: #E4E4E4;
+    overflow: hidden;
+    width:500px;
+    height:350px;
+}
+form .progress {
+    line-height: 15px;
+}
+.progress {
+    display: inline-block;
+    width: 100px;
+    border: 3px groove #CCC;
+}
+.progress div {
+    font-size: smaller;
+    background: orange;
+    width: 0;
 }

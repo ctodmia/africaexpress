@@ -2,7 +2,9 @@ angular.module('camerXpress', [
 	'ui.router',
 	'ngMaterial',
 	'ngAria',
-	'ngAnimate'
+	'ngAnimate',
+	'ngFileUpload',
+	'ngImgCrop'
 	])
 
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){

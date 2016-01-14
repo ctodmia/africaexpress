@@ -78,3 +78,7 @@ form .progress {
     background: orange;
     width: 0;
 }
+a {
+	text-decoration: none;
+	color: inherit;
+}

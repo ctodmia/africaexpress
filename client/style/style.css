@@ -54,6 +54,10 @@ a.md-button.md-raised-sell, .md-button.md-raised-sell {
 	padding: 20px 100px 10px 100px;
 }
 
+md-card {
+	width: 200px;
+
+}
 
 .cropArea {
     background: #E4E4E4;

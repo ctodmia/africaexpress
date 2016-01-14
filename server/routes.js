@@ -25,7 +25,7 @@ app.get('/', function(req, res){});
 		console.log('we got some data', req.body);
 		var item = new Item()
 		item.username= req.body.username; 
-		item.name= req.body.name;
+		item.itemname= req.body.name;
 		item.description= req.body.description;
 		item.picture= req.body.picture;
 		item.price= req.body.price;

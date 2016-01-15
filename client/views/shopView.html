@@ -1,33 +1,32 @@
-<h1>This is the ShopView</h1>
+ <md-toolbar class="main">
+   <div class="md-toolbar-tools">
+     <md-button class="md-icon-button" aria-label="Settings">
+      <!--  <md-icon md-svg-icon="bower_components/material-design-icons/maps/svg/design/ic_local_airport_24px.svg"></md-icon> -->
+     </md-button>
+     <h2>
+       <span class="md-title">Africa Express!</span>
+     </h2>
+     <ul>
+      <li><a href="https://github.com/ctodmia">About</a></li>
+      <li><a ui-sref="shop">Shop</a></li>
+      <li><a ui-sref="sell">Sell</a></li>
+     </ul>
+   </div>
+ </md-toolbar>
 
-<md-card>
- <img src="card-image.png" class="md-card-image" alt="image caption">
- <md-card-content>
-   <h2>Card headline</h2>
-   <p>Card content</p>
- </md-card-content>
- <md-card-footer>
-   Card footer
- </md-card-footer>
-</md-card>
+<div id="shop">
 
-<md-card>
- <img src="card-image.png" class="md-card-image" alt="image caption">
- <md-card-content>
-   <h2>Card headline</h2>
-   <p>Card content</p>
- </md-card-content>
+<md-card ng-repeat="item in allItems">
+ <img ng-src="{{item.picture}}" class="md-card-image" alt="image caption">
  <md-card-actions layout="row" layout-align="end center">
-   <md-button>Action 1</md-button>
-   <md-button>Action 2</md-button>
+   <md-button>I want this!</md-button>
+   <md-button>Buy Now</md-button>
  </md-card-actions>
+ <md-card-content>
+   <h2>{{item.itemname}}</h2>
+   <p>{{item.description}}</p>
+ </md-card-content>
+ 
 </md-card>
 
-<md-input-container>
-  <label>Username</label>
-  <input type="text" ng-model="user.name">
-</md-input-container>
-<md-input-container>
-  <label>Description</label>
-  <textarea ng-model="user.description"></textarea>
-</md-input-container>
+</div>

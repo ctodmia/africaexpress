@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 // var mongodbUri = 'mongodb://test:test@ds045785.mongolab.com:45785/africaexpress'
 var Schema = mongoose.Schema;
 
-var db = mongoose.createConnection('mongodb://test:test@ds045785.mongolab.com:45785/africaexpress')
+var db = mongoose.createConnection('mongodb://test:test@ds045021.mongolab.com:45021/heroku_h86nqkc7')
 // var db = mongoose.connection;
 
 db.on('error', function(err){

@@ -1,5 +1,8 @@
 var mongoose = require('mongoose');
+var mongodbUri = 'mongodb://test:test@ds045785.mongolab.com:45785/africaexpress'
 var Schema = mongoose.Schema;
+
+mongoose.connect(mongodbUri)
 var db = mongoose.connection;
 
 db.on('error', function(err){

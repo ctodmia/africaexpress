@@ -13,8 +13,10 @@
      </ul>
    </div>
  </md-toolbar>
-<h1>this is the SellView</h1>
-<div id="sell">
+
+<div id="sell" layout="row">
+
+<div flex="60">
 <md-input-container>
   <label>Username</label>
   <input type="text" ng-model="username">
@@ -38,9 +40,23 @@
 <md-input-container>
   <label>Image Url</label>
   <input ng-model="picture">
-     <center>
+ <!--     <center>
           <img class="img-circle img-responsive" width="250" height="250" ng-src="{{picture || 'https://placehold.it/100x100'}}">
-        </center>
+        </center> -->
 </md-input-container>
+</div>
+
+<div flex="30">
+<md-card>
+ <img ng-src="{{picture || 'https://placehold.it/100x100'}}" class="md-card-image" alt="image caption">
+ <md-card-actions layout="row" layout-align="end center">
+   <md-button>I want this!</md-button>
+   <md-button>Buy Now</md-button>
+ </md-card-actions>
+ <md-card-content>
+   <h2>{{username}}</h2>
+   <p>{{description}}</p>
+ </md-card-content>
+</md-card>
 <button ng-click="add()">Add</button>
 </div>

@@ -16,7 +16,9 @@
 
 <div id="shop">
 
-<md-card ng-repeat="item in allItems">
+<ul>
+<li ng-repeat="item in allItems">
+<md-card>
  <img ng-src="{{item.picture}}" class="md-card-image" alt="image caption">
  <md-card-actions layout="row" layout-align="end center">
    <md-button>I want this!</md-button>
@@ -26,7 +28,7 @@
    <h2>{{item.itemname}}</h2>
    <p>{{item.description}}</p>
  </md-card-content>
- 
 </md-card>
-
+</li>
+</ul>
 </div>

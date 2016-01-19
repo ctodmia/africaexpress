@@ -6,4 +6,6 @@ angular.module('africaXpress')
 				$scope.allItems = data
 			});
 		};
+
+		$scope.getAll();
 	});

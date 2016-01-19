@@ -79,6 +79,18 @@ form .progress {
 	margin: 50px 100px 10px 100px;
 }
 
+#sell{
+	margin: 50px 100px 10px 100px;
+}
+
+md-input-container {
+	width: 700px;
+}
+
+md-card{
+	width: 200px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

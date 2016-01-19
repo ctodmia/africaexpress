@@ -11,7 +11,10 @@ var config = require('./config/config')
 
 var port = process.env.PORT || 8080;
 
-var uri = config.MONGO_URI; 
+var uri = config.MONGO_URI;
+
+var multer  = require('multer')
+var upload = multer({ dest: 'uploads/' }) 
 
 mongoose.connect(uri);
 var db = mongoose.connection;
@@ -47,5 +50,10 @@ console.log('Meet me at the port...its going down' + port);
 		    });
 	})
 
+	app.post('/photos/upload', upload.array('photos', 12), function (req, res, next) {
+		console.log('this is req.files', req.files)
+	  // req.files is array of `photos` files
+	  // req.body will contain the text fields, if there were any
+	})
 
 module.exports = app;

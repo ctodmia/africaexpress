@@ -51,7 +51,9 @@ console.log('Meet me at the port...its going down' + port);
 	})
 
 	app.post('/photos/upload', upload.array('photos', 12), function (req, res, next) {
-		console.log('this is req.files', req.files)
+		console.log('this is req.files', req.body.file)
+		// var encoded = atob(req.body.file)
+		// console.log('this is encoded', encoded)
 	  // req.files is array of `photos` files
 	  // req.body will contain the text fields, if there were any
 	})

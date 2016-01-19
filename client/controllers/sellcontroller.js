@@ -25,12 +25,15 @@ angular.module('africaXpress')
 
 
 		$scope.upload = function (dataUrl) {
+			var encoded = atob(dataUrl.data)
+		console.log('this is encoded', encoded)
         Upload.upload({
-            url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
+            url: '/photos/upload',
             data: {
-                file: Upload.dataUrltoBlob(dataUrl)
+                file: encoded
             },
         }).then(function (response) {
+        	// console.log('what is this response', response)
             $timeout(function () {
                 $scope.result = response.data;
             });

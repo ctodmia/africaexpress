@@ -43,11 +43,11 @@ Angular Material Design
 
 Feature showcase: 
 
-The sellview of the application allows sells to create inventory cards that are later displayed on the showview 
+The sellview of the application allows sellers to create inventory cards that are later displayed to the entire marketplace
 <a href="https://africaexpress.herokuapp.com/#/sell" target="_blank"><img src="client/img/sellview.jpg"></a>
 
 The shopview is modern display of all the available inventory in the application. 
-<a href="https://africaexpress.herokuapp.com/#/shop" target="_blank"><img src="client/img/sellview.jpg"></a>
+<a href="https://africaexpress.herokuapp.com/#/shop" target="_blank"><img src="client/img/shopview.jpg"></a>
 
 
 <br>

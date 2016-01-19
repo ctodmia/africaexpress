@@ -46,7 +46,7 @@ angular.module('africaXpress')
         Upload.upload({
             url: '/photos/upload',
             data: {
-                file: dataUrl
+                file: Upload.dataUrltoBlob(dataUrl)
             },
         }).then(function (response) {
         	// console.log('what is this response', response)

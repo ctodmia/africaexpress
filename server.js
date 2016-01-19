@@ -1,4 +1,6 @@
 var express = require('express');
+var multipart = require('connect-multiparty');
+var multipartMiddleware = multipart();
 var app = express();
 var mongoose = require('mongoose')
 var cors = require('cors')
@@ -13,8 +15,6 @@ var port = process.env.PORT || 8080;
 
 var uri = config.MONGO_URI;
 
-var multer  = require('multer')
-var upload = multer({ dest: 'uploads/' }) 
 
 mongoose.connect(uri);
 var db = mongoose.connection;
@@ -50,8 +50,8 @@ console.log('Meet me at the port...its going down' + port);
 		    });
 	})
 
-	app.post('/photos/upload', upload.array('photos', 12), function (req, res, next) {
-		console.log('this is req.files', req.body.file)
+	app.post('/photos/upload', multipartMiddleware, function (req, res) {
+		console.log('this is req.files', req.filess)
 		// var encoded = atob(req.body.file)
 		// console.log('this is encoded', encoded)
 	  // req.files is array of `photos` files

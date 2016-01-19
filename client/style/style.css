@@ -35,6 +35,20 @@ a.md-button.md-raised-shop, .md-button.md-raised-shop {
 	padding: 10px 50px 10px 50px;
 }
 
+a.md-button.md-raised-sub, .md-button.md-raised-sub {
+	margin: 0px 10px 0px 10px;
+	background-color: #fff;
+	color: rgb(253, 58, 0);
+	width: 700px;
+	border-color: rgb(253, 58, 0);
+	border: solid;
+	text-align: center;
+	font-weight: 400;
+	font-size: .75rem;
+	/*padding: 10px 50px 10px 50px;*/
+}
+
+
 #main{
 	background-color: rgb(253, 58, 0);
 	color: rgba(255,255,255,0.87);
@@ -49,6 +63,21 @@ a.md-button.md-raised-sell, .md-button.md-raised-sell {
 	font-size: 1.5rem;
 	padding: 10px 50px 10px 50px;
 }
+
+
+a.md-button.md-raised-success, .md-button.md-raised-success {
+	margin: 0px 10px 0px 10px;
+	background-color: rgb(253, 58, 0);
+	color: #fff;
+	width: 700px;
+	/*border-color: rgb(253, 58, 0);*/
+	/*border: solid;*/
+	text-align: center;
+	font-weight: 400;
+	font-size: .75rem;
+	/*padding: 10px 50px 10px 50px;*/
+}
+
 .md-raised {
 	margin: 10px 10px 200px 20px;
 	padding: 20px 100px 10px 100px;

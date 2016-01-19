@@ -59,7 +59,7 @@
 	   <p class="price">{{price}}</p>
 	 </md-card-content>
 	 <md-card-actions layout="row" layout-align="left center">
-	   <md-button><a href="{{buylink}}" target="_blank">Buy Now</a></md-button>
+	   <md-button class="md-raised-success"><a href="{{buylink}}" target="_blank">Buy Now</a></md-button>
 	 </md-card-actions>
 	</md-card>
 	<div flex="50">
@@ -69,8 +69,8 @@
 			<h2>Your item was added!</h2>
 			<p>Your item was added to the public marketplace for purchasing. Would you to add another item or view all items on sale.</p>
 			<div layout="row">
-				<md-button ng-click="addAnother()">Add Another Item</md-button> or 
-				<md-button ui-sref="shop">View All Items</md-button>
+				<md-button ng-click="addAnother()" class="md-raised-sub">Add more items</md-button> or 
+				<md-button ui-sref="shop" class="md-raised-success">View All Items</md-button>
 			</div>
 		</div>
 	</div>

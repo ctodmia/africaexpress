@@ -50,10 +50,4 @@ console.log('Meet me at the port...its going down' + port);
 		    });
 	})
 
-	app.post('/photos/upload', upload.array('photos', 12), function (req, res, next) {
-		console.log('this is req.files', req.files)
-	  // req.files is array of `photos` files
-	  // req.body will contain the text fields, if there were any
-	})
-
 module.exports = app;

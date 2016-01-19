@@ -16,10 +16,22 @@
 
 
 <div id="shop">
-Check the database
 <ul>
 <li ng-repeat="item in allItems">
 <md-card>
+ <img ng-src="{{item.picture || 'https://placehold.it/100x100'}}" class="md-card-image" alt="image caption">
+ <md-card-content >
+
+   <h2>{{item.name}}</h2>
+   <p>{{item.description}}</p>
+    <p>{{item.price}}</p>
+   <p>{{item.username}}</p>
+ </md-card-content>
+ <md-card-actions layout="row" layout-align="end center">
+   <md-button><a href="{{item.buylink}}" target="_blank">Buy Now</a></md-button>
+ </md-card-actions>
+</md-card>
+<!-- <md-card>
  <img ng-src="{{item.picture}}" class="md-card-image" alt="image caption">
  <md-card-actions layout="row" layout-align="end center">
    <md-button>I want this!</md-button>
@@ -29,7 +41,7 @@ Check the database
    <h2>{{item.itemname}}</h2>
    <p>{{item.description}}</p>
  </md-card-content>
-</md-card>
+</md-card> -->
 </li>
 </ul>
 </div>

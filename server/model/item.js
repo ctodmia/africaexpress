@@ -20,7 +20,8 @@ var itemSchema = new Schema({
  picture: String,
  description: String,
  price: Number,
- buylink: String, 
+ buylink: String,
+ likes: Number 
 });
 
 var Item = mongoose.model("Item", itemSchema);

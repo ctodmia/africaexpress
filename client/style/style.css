@@ -96,8 +96,12 @@ md-input-container {
 	width: 700px;
 }
 
-md-card{
+md-card {
 	width: 200px;
+}
+
+md-card md-card-content {
+	order: 0;
 }
 
 ul {

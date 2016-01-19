@@ -22,6 +22,10 @@
   <input type="text" ng-model="username">
 </md-input-container>
 <md-input-container>
+  <label>Image Url</label>
+  <input ng-model="picture">
+</md-input-container>
+<md-input-container>
   <label>Item Name</label>
   <textarea ng-model="name"></textarea>
 </md-input-container>
@@ -37,59 +41,24 @@
   <label>Buy Now Link</label>
   <input ng-model="buylink">
 </md-input-container>
-<md-input-container>
-  <label>Image Url</label>
-  <input ng-model="picture">
- <!--     <center>
-          <img class="img-circle img-responsive" width="250" height="250" ng-src="{{picture || 'https://placehold.it/100x100'}}">
-        </center> -->
-</md-input-container>
+
 </div>
 
 <div flex="30">
 
-<form name="myForm">
-        <div>Crop Image and Upload</div>
-        <button ngf-select ng-model="picFile" accept="image/*">
-            Select Picture</button>
-           <!-- <form action="/photos/upload" method="post"> -->
-          <!--  <label>Grab a pictures</label>
-           	<input type="file" ng-model="picFile" action="/photos/upload" method="post"> -->
-           <!-- </form> -->
-        <div ngf-drop ng-model="picFile" ngf-pattern="image/*"
-             class="cropArea">
-            <img-crop image="picFile  | ngfDataUrl"                 
-            result-image="croppedDataUrl" ng-init="croppedDataUrl=''">
-            </img-crop>
-        </div>
-        <div>
-            <img ng-src="{{croppedDataUrl}}" />
-        </div>
-        <button ng-click="upload(croppedDataUrl)">Submit</button> 
-            
-        <span class="progress" ng-show="progress >= 0">
-          <div style="width:{{progress}}%" ng-bind="progress + '%'"></div>
-        </span>
-        <span ng-show="result">Upload Successful</span>
-        <span class="err" ng-show="errorMsg">{{errorMsg}}</span>
-    </form>
-
-
-
-
-
-
 <md-card>
  <img ng-src="{{picture || 'https://placehold.it/100x100'}}" class="md-card-image" alt="image caption">
- <md-card-actions layout="row" layout-align="end center">
-   <md-button>I want this!</md-button>
-   <md-button>Buy Now</md-button>
- </md-card-actions>
- <md-card-content>
-   <h2>{{username}}</h2>
+ <md-card-content >
+
+   <h2>{{name}}</h2>
    <p>{{description}}</p>
+    <p>{{price}}</p>
+   <p>{{username}}</p>
  </md-card-content>
+ <md-card-actions layout="row" layout-align="end center">
+   <md-button><a href="{{buylink}}" target="_blank">Buy Now</a></md-button>
+ </md-card-actions>
 </md-card>
 <button ng-click="add()">Add</button>
-
+</div>
 </div>

@@ -4,9 +4,9 @@ angular.module('africaXpress')
 		$scope.displayPic;
 		$scope.name;
 		$scope.picFile;
+		$scope.fileadded = true; 
 		$scope.add = function(){
-			console.log('we hitit', $scope.name)
-			console.log('this is file html5', $scope.file)
+			$scope.fileadded = false;
 			Item.newItem({
 				username: $scope.username, 
 				name: $scope.name, 
@@ -16,11 +16,15 @@ angular.module('africaXpress')
 				buylink: $scope.buylink,
 
 			});
+			
+		};
+		$scope.addAnother = function() {
+			$scope.fileadded = true;
 			$scope.name = ''; 
 			$scope.description = '';
 			$scope.picture = '';
 			$scope.price = '';
 			$scope.buylink = '';
-		}
+		};
 		
 	})

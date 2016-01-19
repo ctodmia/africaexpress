@@ -25,7 +25,7 @@ md-toolbar.home{
 }
 
 a.md-button.md-raised-shop, .md-button.md-raised-shop {
-	margin: 100px 50px 100px 50px;
+	margin: 10px 50px 10px 50px;
 	background-color: #fff;
 	color: rgb(253, 58, 0);
 	/*border-color: rgb(253, 58, 0);*/
@@ -40,7 +40,7 @@ a.md-button.md-raised-shop, .md-button.md-raised-shop {
 	color: rgba(255,255,255,0.87);
 }
 a.md-button.md-raised-sell, .md-button.md-raised-sell {
-	margin: 100px 20px 100px 20px;
+	margin: 10px 20px 10px 20px;
 	background-color: rgb(253, 58, 0);
 	color: #fff;
 	/*border-color: rgb(253, 58, 0);*/
@@ -53,12 +53,27 @@ a.md-button.md-raised-sell, .md-button.md-raised-sell {
 	margin: 10px 10px 200px 20px;
 	padding: 20px 100px 10px 100px;
 }
-
+p.username{
+	margin: 0px;
+	font-style: italic;
+	font-size: .75rem;
+}
+p.description{
+	height: 100px;
+	overflow: hidden;
+}
+h2.title{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 md-card {
 	width: 200px;
 
 }
-
+md-card .md-card-image {
+	height: 200px;
+	width: 200px;
+}
 .cropArea {
     background: #E4E4E4;
     overflow: hidden;
@@ -93,7 +108,7 @@ a {
 }
 
 md-input-container {
-	width: 700px;
+	width: 500px;
 }
 
 md-card {
@@ -102,6 +117,8 @@ md-card {
 
 md-card md-card-content {
 	order: 0;
+	height: 200px;
+	padding: 0px 16px 0px 16px; 
 }
 
 ul {

@@ -1,10 +1,14 @@
-# GACC
+# Africa Express
 
-> A social & pair-programming coding platform that connects novice programmers with experienced programmers
+> Africa express is an marketplace web application that makes selling custom goods fast and easy.
+
+View a live demo of the application here: [Live Demo](https://africaexpress.herokuapp.com/#/)
+
+<img src="client/img/africaexpresshome.jpg">
 
 ## Table of Contents
 
-1. [Team](#team)
+1. [Owner](#owner)
 1. [Technology Stack](#technology-stack)
 1. [Application Overview](#application-overview)
 1. [Project Roadmap](#project-roadmap)
@@ -15,26 +19,35 @@
 
 <br>
 
-### Team
+### Owner
 
 [![Carine Todmia](https://avatars0.githubusercontent.com/u/9440923?v=3&s=70)](https://github.com/ctodmia) <br>Carine Todmia
-  --- | --- | --- | --- | --- | --- | ---
-[LinkedIn](https://www.linkedin.com/in/carinetodmia) | [LinkedIn](https://www.linkedin.com/in/gabrielmatias)<br>[Twitter](https://twitter.com/GabeCodes)|[LinkedIn](https://www.linkedin.com/in/aheri)<br>[Twitter](https://twitter.com/Aherisan)
+
+[LinkedIn](https://www.linkedin.com/in/carinetodmia) | [Twitter](https://twitter.com/cinfinitymedia)|[Website](http://carinetodmia.com)
 
 
 <br>
 
 ### Technology Stack
 
-<img src="http://i.imgur.com/dktBkgD.png"> |<img src="http://i.imgur.com/tJ6t51r.png">|  <img src="http://i.imgur.com/XiDcCDJ.png">|<img src="http://i.imgur.com/QbZQ4D0.png">|<img src="http://i.imgur.com/9NTYGH3.png">
-  --- | --- | --- | --- | --- |
-Angularjs| Firebase | Bootstrap| OAuth|Codeshare.io
+<img src="http://i.imgur.com/dktBkgD.png"> |  <img src="http://i.imgur.com/P5hKmWx.png">|<img src="http://i.imgur.com/hi6gCzf.png">|<img src="http://i.imgur.com/jK9PTgu.png">
+--- | --- | --- | --- |
+Angular.js | MongoDB| Node.js|Express.js
+
+Other:
+
+Angular Material Design
 
 <br>
 ### Application Overview
 
-Feature showcase: Real time code editing & real time messaging chat rooms
-<img src="client/img/africaexpresshome.jpg">
+Feature showcase: 
+
+The sellview of the application allows sells to create inventory cards that are later displayed on the showview 
+<a href="https://africaexpress.herokuapp.com/#/sell" target="_blank"><img src="client/img/sellview.jpg"></a>
+
+The shopview is modern display of all the available inventory in the application. 
+<a href="https://africaexpress.herokuapp.com/#/shop" target="_blank"><img src="client/img/sellview.jpg"></a>
 
 
 <br>

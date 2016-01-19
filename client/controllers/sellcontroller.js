@@ -23,14 +23,30 @@ angular.module('africaXpress')
 			$scope.buylink = '';
 		}
 
+		$scope.$watch('files', function () {
+		        $scope.upload($scope.files);
+		    });
+		    $scope.$watch('file', function () {
+		        if ($scope.file != null) {
+		            $scope.files = [$scope.file]; 
+		        }
+		    });
+		    console.log('this is the scope.files', $scope.files)
+		    $scope.log = '';
+
+
 
 		$scope.upload = function (dataUrl) {
-			var encoded = atob(dataUrl.data)
-		console.log('this is encoded', encoded)
+			var results
+			var reader  = new FileReader()
+			reader.addEventListener("load", function () {
+			    results = reader.result;
+			  }, false);
+			console.log('this is the reader.result', results)
         Upload.upload({
             url: '/photos/upload',
             data: {
-                file: encoded
+                file: dataUrl
             },
         }).then(function (response) {
         	// console.log('what is this response', response)

@@ -1,13 +1,16 @@
 var mongoose = require('mongoose');
+// var mongodbUri = 'mongodb://test:test@ds045785.mongolab.com:45785/africaexpress'
 var Schema = mongoose.Schema;
-var db = mongoose.connection;
+
+var db = mongoose.createConnection('mongodb://test:test@ds045785.mongolab.com:45785/africaexpress')
+// var db = mongoose.connection;
 
 db.on('error', function(err){
   console.log('connection error', err);
 });
 
 db.once('open', function(){
-  console.log('connect');
+  console.log('connect to database');
 });
 
 

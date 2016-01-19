@@ -1,6 +1,25 @@
-<h1>This is the ShopView</h1>
+ <md-toolbar class="main">
+   <div class="md-toolbar-tools">
+     <md-button class="md-icon-button" aria-label="Settings">
+      <!--  <md-icon md-svg-icon="bower_components/material-design-icons/maps/svg/design/ic_local_airport_24px.svg"></md-icon> -->
+     </md-button>
+     <h2>
+       <span class="md-title">Africa Express!</span>
+     </h2>
+     <ul>
+      <li><a href="https://github.com/ctodmia">About</a></li>
+      <li><a ui-sref="shop">Shop</a></li>
+      <li><a ui-sref="sell">Sell</a></li>
+     </ul>
+   </div>
+ </md-toolbar>
 
-<md-card ng-repeat="item in allItems">
+
+<div id="shop">
+
+<ul>
+<li ng-repeat="item in allItems">
+<md-card>
  <img ng-src="{{item.picture}}" class="md-card-image" alt="image caption">
  <md-card-actions layout="row" layout-align="end center">
    <md-button>I want this!</md-button>
@@ -10,5 +29,7 @@
    <h2>{{item.itemname}}</h2>
    <p>{{item.description}}</p>
  </md-card-content>
- 
 </md-card>
+</li>
+</ul>
+</div>

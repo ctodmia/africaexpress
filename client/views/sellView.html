@@ -49,20 +49,22 @@
 <h3>Live Preview</h3>
 <p>This is a live preview of how your card will look to the general public</p>
 <div layout="row">
-	<md-card flex="50">
+	<div flex="40">
+		<md-card >
 
-	 <img ng-src="{{picture || 'img/placeholder.png'}}" class="md-card-image" alt="image caption">
-	 <md-card-content >
-	   <p class="username">Sold by: {{username}}</p>
-	   <h2 class="title">{{name}}</h2>
-	   <p class="description">{{description}}</p>
-	   <p class="price">{{price}}</p>
-	 </md-card-content>
-	 <md-card-actions layout="row" layout-align="left center">
-	   <md-button class="md-raised-success"><a href="{{buylink}}" target="_blank">Buy Now</a></md-button>
-	 </md-card-actions>
-	</md-card>
-	<div flex="50">
+		 <img ng-src="{{picture || 'img/placeholder.png'}}" class="md-card-image" alt="image caption">
+		 <md-card-content >
+		   <p class="username">Sold by: {{username}}</p>
+		   <h2 class="title">{{name}}</h2>
+		   <p class="description">{{description}}</p>
+		   <p class="price">{{price}}</p>
+		 </md-card-content>
+		 <md-card-actions layout="row" layout-align="left center">
+		   <md-button class="md-raised-success"><a href="{{buylink}}" target="_blank">Buy Now</a></md-button>
+		 </md-card-actions>
+		</md-card>
+	</div>
+	<div flex="60">
 		<md-button class="md-raised-sell" ng-click="add()" ng-show="fileadded">Add</md-button>
 
 		<div  ng-show="!fileadded">

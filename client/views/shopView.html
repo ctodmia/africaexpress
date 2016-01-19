@@ -25,10 +25,9 @@
      <p class="username">Sold by: {{item.username}}</p>
      <h2 class="title">{{item.itemname}}</h2>
      <p class="description">{{item.description}}</p>
-     <p class="price">{{item.price}}</p>
    </md-card-content>
    <md-card-actions layout="row" layout-align="left center">
-     <md-button class="md-raised-success"><a href="{{buylink}}" target="_blank">Buy Now</a></md-button>
+     <a href="{{buylink}}" target="_blank"><md-button class="md-raised-success">Buy Now | {{item.price | currency}}</md-button></a>
    </md-card-actions>
 </md-card>
 <!-- <md-card>

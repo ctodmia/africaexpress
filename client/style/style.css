@@ -5,19 +5,16 @@ md-toolbar.home{
 
 .homewrapper{
 	height: 900px;
-
-	/*background-color: red;*/
 	background-image: url('../img/homebg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 
 }
+
 .container {
 	margin: 300px 0px 100px 0px;
 	text-align: center;
 	color: #fff;
-
-
 }
 
 .container h1 {
@@ -28,8 +25,6 @@ a.md-button.md-raised-shop, .md-button.md-raised-shop {
 	margin: 10px 50px 10px 50px;
 	background-color: #fff;
 	color: rgb(253, 58, 0);
-	/*border-color: rgb(253, 58, 0);*/
-	/*border: solid;*/
 	font-weight: 700;
 	font-size: 1.5rem;
 	padding: 10px 50px 10px 50px;
@@ -39,13 +34,12 @@ a.md-button.md-raised-sub, .md-button.md-raised-sub {
 	margin: 0px 10px 0px 10px;
 	background-color: #fff;
 	color: rgb(253, 58, 0);
-	width: 700px;
+	width: 200px;
 	border-color: rgb(253, 58, 0);
 	border: solid;
 	text-align: center;
 	font-weight: 400;
 	font-size: .75rem;
-	/*padding: 10px 50px 10px 50px;*/
 }
 
 
@@ -57,8 +51,6 @@ a.md-button.md-raised-sell, .md-button.md-raised-sell {
 	margin: 10px 20px 10px 20px;
 	background-color: rgb(253, 58, 0);
 	color: #fff;
-	/*border-color: rgb(253, 58, 0);*/
-	/*border: solid;*/
 	font-weight: 700;
 	font-size: 1.5rem;
 	padding: 10px 50px 10px 50px;
@@ -69,13 +61,10 @@ a.md-button.md-raised-success, .md-button.md-raised-success {
 	margin: 0px 10px 0px 10px;
 	background-color: rgb(253, 58, 0);
 	color: #fff;
-	width: 700px;
-	/*border-color: rgb(253, 58, 0);*/
-	/*border: solid;*/
+	width: 150px;
 	text-align: center;
 	font-weight: 400;
 	font-size: .75rem;
-	/*padding: 10px 50px 10px 50px;*/
 }
 
 .md-raised {
@@ -92,7 +81,6 @@ p.username{
 p.description{
 	height: 50px;
 	overflow: hidden;
-	/*margin-top: 10px;*/
 }
 h2.title{
 	margin-top: 0px;
@@ -163,7 +151,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: #333;*/
 }
 
 li {
@@ -179,7 +166,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #fff;
 }
 
 .active {

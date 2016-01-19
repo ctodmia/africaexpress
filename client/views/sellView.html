@@ -57,17 +57,15 @@
 		   <p class="username">Sold by: {{username}}</p>
 		   <h2 class="title">{{name}}</h2>
 		   <p class="description">{{description}}</p>
-		   <p class="price">{{price}}</p>
 		 </md-card-content>
-		 <md-card-actions layout="row" layout-align="left center">
-		   <md-button class="md-raised-success"><a href="{{buylink}}" target="_blank">Buy Now</a></md-button>
-		 </md-card-actions>
-		</md-card>
+		<md-card-actions layout="row" layout-align="center">
+     <a href="{{buylink}}" target="_blank"><md-button class="md-raised-success">Buy Now | {{price | currency}}</md-button></a>
+   </md-card-actions>
 	</div>
 	<div flex="60">
 		<md-button class="md-raised-sell" ng-click="add()" ng-show="fileadded">Add</md-button>
 
-		<div  ng-show="!fileadded">
+		<div class="file-added" ng-show="!fileadded">
 			<h2>Your item was added!</h2>
 			<p>Your item was added to the public marketplace for purchasing. Would you to add another item or view all items on sale.</p>
 			<div layout="row">

@@ -37,6 +37,7 @@ a.md-button.md-raised-sub, .md-button.md-raised-sub {
 	width: 200px;
 	border-color: rgb(253, 58, 0);
 	border: solid;
+	border-width: 2px;
 	text-align: center;
 	font-weight: 400;
 	font-size: .75rem;
@@ -119,6 +120,10 @@ a {
 	color: inherit;
 }
 
+.file-added h2{
+	color: #31E500;
+}
+
 #shop{
 	margin: 50px 100px 10px 100px;
 }
@@ -167,6 +172,7 @@ li a {
 
 li a:hover:not(.active) {
     background-color: #fff;
+    color: #000;
 }
 
 .active {

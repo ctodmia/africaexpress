@@ -53,14 +53,17 @@ a.md-button.md-raised-sell, .md-button.md-raised-sell {
 	margin: 10px 10px 200px 20px;
 	padding: 20px 100px 10px 100px;
 }
+
 p.username{
 	margin: 0px;
 	font-style: italic;
 	font-size: .75rem;
 }
+
 p.description{
-	height: 100px;
+	height: 50px;
 	overflow: hidden;
+	/*margin-top: 10px;*/
 }
 h2.title{
 	margin-top: 0px;
@@ -106,9 +109,14 @@ a {
 #sell{
 	margin: 50px 100px 10px 100px;
 }
+.input-container{
+	height: 450px;
+	overflow: hidden;
+}
 
 md-input-container {
 	width: 500px;
+	height: 75px;
 }
 
 md-card {
@@ -117,7 +125,7 @@ md-card {
 
 md-card md-card-content {
 	order: 0;
-	height: 200px;
+	height: 125px;
 	padding: 0px 16px 0px 16px; 
 }
 
